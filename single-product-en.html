@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page name</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="css/main-ltr.css"/>
+  </head>
+  <body> 
+    <!-- start bg body-->
+    <svg class="svg-body" xmlns="http://www.w3.org/2000/svg" width="368" height="1041" viewbox="0 0 368 1041" fill="none">
+      <path d="M328.373 -164.69C227.446 -195.575 109.086 -155.861 47.2335 -70.3516C-14.6249 15.1439 -15.4342 140.171 45.3134 226.617C88.5364 288.129 157.342 328.732 197.337 392.38C257.398 487.959 239.975 612.677 277.349 719.195C323.89 851.861 448.321 939.773 570.536 1009.09C611.368 1032.23 662.924 1054.28 702.673 1029.4C743.985 1003.54 744.97 944.221 737.24 896.011C678.034 526.845 398.878 223.64 327.666 -143.41" fill="#FFC149"></path>
+    </svg>
+    <!-- Start NavBar-->
+    <header id="header">
+      <!-- navbar start-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="nav-mob"><a class="navbar-brand" href="index-en.html"><img class="logo img-fluid" src="./images/logo/logo.webp" alt="logo" title="logo"></a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"><i class="fa-solid fa-bars"></i></button>
+          </div>
+          <div class="offcanvas-lg offcanvas-start side-nav-bar" id="navbarSupportedContent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1315" height="140" viewbox="0 0 1315 140" fill="none">
+              <g filter="url(#filter0_d_1_48)">
+                <path d="M1292.62 7.69934C1308.22 15.0242 1325.54 115.79 1295.7 125.825C1261.19 137.423 66.3032 141.696 24.517 124.58C-17.3145 107.489 3.84998 7.08893 18.9093 4.32989C33.9686 1.57085 1264.67 -5.38779 1292.62 7.69934Z" fill="#0A2461"></path>
+              </g>
+              <defs>
+                <filter id="filter0_d_1_48" x="0" y="0" width="1314.47" height="139.29" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+                  <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix>
+                  <feoffset dx="2.47" dy="3.29"></feoffset>
+                  <fecolormatrix type="matrix" values="0 0 0 0 0.0823529 0 0 0 0 0.160784 0 0 0 0 0.329412 0 0 0 1 0"></fecolormatrix>
+                  <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_48"></feblend>
+                  <feblend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_48" result="shape"></feblend>
+                </filter>
+              </defs>
+            </svg>
+            <div class="offcanvas-header"><a class="navbar-brand" href="index-en.html"><img class="img-fluid" src="./images/logo/logo.webp" alt="logo" title="logo"></a>
+              <button class="btn-close" type="button" data-bs-dismiss="offcanvas" data-bs-target="#navbarSupportedContent" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body"><a class="navbar-brand" href="index-en.html"><img class="logo img-fluid" src="./images/logo/logo.webp" alt="logo" title="logo"></a>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="index-en.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us-en.html">من نحن</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="services" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">لوحات تجريدية</a>
+                  <ul class="dropdown-menu dropdown-menu--navbar">
+                    <li><a class="dropdown-item" href="abstract-paintings-en.html">
+                        <p class="dropdown-item__title">درجات الازرق</p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings-en.html">
+                        <p class="dropdown-item__title">جمال ورق الدهب </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings-en.html">
+                        <p class="dropdown-item__title">درجات البنى و البيج </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings-en.html">
+                        <p class="dropdown-item__title">درجات الابيض  </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings-en.html">
+                        <p class="dropdown-item__title">درجات الاحمر و العنابى </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings-en.html">
+                        <p class="dropdown-item__title">درجات السماوى </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings-en.html">
+                        <p class="dropdown-item__title">جمال الالوان و تناسقها </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings-en.html">
+                        <p class="dropdown-item__title">درجات الابيض و الاسود و الرمادى </p></a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="rose-paintings-en.html">ورود </a></li>
+                <li class="nav-item"><a class="nav-link" href="women-paintings-en.html">نساء </a></li>
+                <li class="nav-item"><a class="nav-link" href="islamic-paintings-en.html">اسلاميات</a></li>
+                <li class="nav-item"><a class="nav-link" href="sale-en.html">تخفيضات </a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us-en.html">اتصل بنا</a></li>
+              </ul>
+              <div class="top-navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="logIn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-fluid" src="./images/icons/user.webp" alt=""></a>
+                    <ul class="dropdown-menu dropdown-menu--navbar" aria-labelledby="logIn">
+                      <li><a class="dropdown-item" href="profile-en.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/user-square.svg"> الحساب الشخصي </p></a></li>
+                      <li><a class="dropdown-item" href="profile-en.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/wishlist.svg"> المفضله  </p></a></li>
+                      <li><a class="dropdown-item" href="profile-en.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/route-square.svg"> العنوان   </p></a></li>
+                      <li><a class="dropdown-item" href="#">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/send-sqaure-2.svg"> تسجيل الخروج   </p></a></li>
+                      <li><a class="dropdown-item" href="register-en.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/user-square.svg"> انشاء حساب</p></a></li>
+                      <li><a class="dropdown-item" href="logIn-en.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/receive-square-2.svg"> تسجيل الدخول   </p></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item shopping-cart-badge"><span class="badge">3</span><a class="nav-link" href="shopping-cart-en.html"><img class="img-fluid" src="./images/icons/shopping-cart.webp" alt=""></a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact-us-en.html"><img class="img-fluid" src="./images/icons/search-normal.webp" alt=""></a></li>
+                </ul>
+                <!-- switch language start--><a class="language-toggle" href="single-product.html">Arabic</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End NavBar-->
+    <!-- start single product page-->
+    <section class="single-product main-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="single-product__gallery row">
+              <div class="single-product__sidebar col-lg-3">
+                <div class="slider-nav">
+                  <div class="item"><img class="img-fluid" src="./images/abstract/1.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/2.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/3.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/4.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/1.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/2.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/3.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/4.webp" alt=""></div>
+                </div>
+              </div>
+              <div class="single-product__bigImg col-lg-9"><img class="img-fluid" src="./images/icons/share.webp" alt="">
+                <div class="slider-for">
+                  <div class="item"><img class="img-fluid" src="./images/abstract/1.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/2.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/3.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/4.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/1.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/2.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/3.webp" alt=""></div>
+                  <div class="item"><img class="img-fluid" src="./images/abstract/4.webp" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="single-product__info">
+              <div class="horizontal-wrapper"> 
+                <h2 class="section-head fs-32">لوحة فنية تجريدية </h2>
+                <table class="table"> 
+                  <tr> 
+                    <td> 
+                      <p class="section-text">رقم الموديل </p>
+                    </td>
+                    <td>
+                      <p class="section-text">2145</p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <p class="section-text">المقاس </p>
+                    </td>
+                    <td>
+                      <p class="section-text">200 سم * 100 سم</p>
+                    </td>
+                  </tr>
+                  <tr> 
+                    <td> 
+                      <p class="section-text">السعر </p>
+                    </td>
+                    <td>
+                      <p class="section-text price">40.00 ريال</p>
+                    </td>
+                  </tr>
+                </table>
+                <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
+                <div class="row">
+                  <div class="col-sm-4">
+                    <div class="cartTable__counter" id="item-1">
+                      <button class="btn decrement" data-id="1"><img src="/images/icons/decrement.svg"></button><span class="value">1</span>
+                      <button class="btn increment" data-id="1"><img src="/images/icons/increment.svg"></button>
+                    </div>
+                  </div>
+                  <div class="col-sm-8 mt-3 mt-sm-0">
+                    <input class="form-control" type="text" placeholder="كتابه ملاحظه" name="">
+                  </div>
+                </div>
+                <button class="main-button abstract"><span>اضافة الى السلة</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="424" height="60" viewbox="0 0 424 60" fill="none">
+                    <g filter="url(#filter0_d_1_2398)">
+                      <path d="M414.781 3.17032C419.788 6.18645 425.346 47.6783 415.768 51.8104C404.696 56.586 21.2756 58.3454 7.86711 51.2977C-5.55594 44.2601 1.2354 2.91897 6.06769 1.7829C10.9 0.646821 405.813 -2.2185 414.781 3.17032Z" fill="#30BCBE"></path>
+                    </g>
+                    <defs>
+                      <filter id="filter0_d_1_2398" x="0" y="0" width="423.47" height="59.29" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+                        <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix>
+                        <feoffset dx="2.47" dy="3.29"></feoffset>
+                        <fecolormatrix type="matrix" values="0 0 0 0 0.0823529 0 0 0 0 0.160784 0 0 0 0 0.329412 0 0 0 1 0"></fecolormatrix>
+                        <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_2398"></feblend>
+                        <feblend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_2398" result="shape"></feblend>
+                      </filter>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end single product page-->
+    <!-- start main slider section -->
+    <section class="main-section main-slider svg-section">
+      <div class="container">
+        <div class="main-section__wrapper">
+          <div class="horizontal-wrapper">
+            <h4 class="section-head fs-48 circle-md">منتجات ذات صلة</h4>
+            <div class="owl-carousel owl-theme main-slider--carousel">
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/1.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button abstract"><span>اضافة الى السلة</span>
+                        <canvas class="abstract" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/2.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button abstract"><span>اضافة الى السلة</span>
+                        <canvas class="abstract" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/3.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button abstract"><span>اضافة الى السلة</span>
+                        <canvas class="abstract" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/4.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button abstract"><span>اضافة الى السلة</span>
+                        <canvas class="abstract" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/1.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button abstract"><span>اضافة الى السلة</span>
+                        <canvas class="abstract" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/2.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button abstract"><span>اضافة الى السلة</span>
+                        <canvas class="abstract" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/3.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button abstract"><span>اضافة الى السلة</span>
+                        <canvas class="abstract" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/4.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button abstract"><span>اضافة الى السلة</span>
+                        <canvas class="abstract" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-section__wrapper">
+          <div class="horizontal-wrapper">
+            <h4 class="section-head fs-48 circle-md">تخفيضات</h4>
+            <div class="owl-carousel owl-theme main-slider--carousel">
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/women/1.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button women"><span>اضافة الى السلة</span>
+                        <canvas class="women" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/women/2.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button women"><span>اضافة الى السلة</span>
+                        <canvas class="women" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/rose/1.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button women"><span>اضافة الى السلة</span>
+                        <canvas class="women" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/rose/2.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button women"><span>اضافة الى السلة</span>
+                        <canvas class="women" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/1.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button women"><span>اضافة الى السلة</span>
+                        <canvas class="women" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/abstract/2.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button women"><span>اضافة الى السلة</span>
+                        <canvas class="women" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/islamic/1.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button women"><span>اضافة الى السلة</span>
+                        <canvas class="women" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="main-card">
+                  <button class="btn addWishlist"><i class="fa-regular fa-heart"></i></button><a class="main-card__img" href="single-product.html"><img class="img-fluid" src="./images/islamic/2.webp" alt=""/></a>
+                  <div class="main-card__content">
+                    <div class="horizontal-wrapper">
+                      <div class="main-card__nameAndPrice"><a href="single-product.html"> 
+                          <h3 class="section-head fs-18">اسم هذه اللوحة المعروضه </h3></a>
+                        <p class="section-text price">40.00 ريال</p>
+                      </div>
+                      <p class="section-text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،</p>
+                      <button class="main-button women"><span>اضافة الى السلة</span>
+                        <canvas class="women" width="168" height="44"></canvas>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end main slider section -->
+    <!-- Start footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__col footer__info">
+            <div class="footer__logo"><img src="./images/logo/logo.webp"></div>
+            <p class="footer__desc">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف </p>
+          </div>
+          <div class="footer__col footer__links">
+            <h3 class="footer__head">منتجاتنا</h3>
+            <ul> 
+              <li> <a href="index-en.html">
+                  <p>لوحات تجريدية</p></a></li>
+              <li> <a href="index-en.html">
+                  <p>لوحات ورود</p></a></li>
+              <li> <a href="index-en.html">
+                  <p>لوحات نساء</p></a></li>
+              <li> <a href="index-en.html">
+                  <p>لوحات اسلامية</p></a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__contact-info">
+            <h3 class="footer__head">اتصل بنا</h3>
+            <ul> 
+              <li> <a href="tel:05123456789">
+                  <p><img src="./images/icons/li_phone.svg"> <span>05123456789</span> </p></a></li>
+              <li> <a href="mailto:info@talaween-art.com">
+                  <p><img src="./images/icons/li_mail.svg"> <span>info@talaween-art.com</span> </p></a></li>
+              <li> <a href="#">
+                  <p><img src="./images/icons/location.svg"> <span>المملكة العربية السعودية - المملكة العربي السعودية</span> </p></a></li>
+            </ul>
+            <ul class="footer__social"> 
+              <li><a href="#"> <img src="./images/icons/facebook.svg"></a></li>
+              <li><a href="#"><img src="./images/icons/insta.svg"> </a> </li>
+              <li><a href="#"><img src="./images/icons/whatsApp.svg"> </a> </li>
+              <li><a href="#"><img src="./images/icons/twitter.svg"> </a> </li>
+              <li><a href="#"><img src="./images/icons/snapchat.svg"> </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>جميع الحقوق محفوظة @ لشركة تلاوين ارت 
+            <script>document.write(new Date().getFullYear())</script>  
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer-->
+    <!-- Start Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="./js/owl-init.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/buttonsType.js"></script>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>

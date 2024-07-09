@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page name</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"/>
+    <link rel="stylesheet" href="css/main-rtl.css"/>
+  </head>
+  <body> 
+    <!-- start bg body-->
+    <svg class="svg-body" xmlns="http://www.w3.org/2000/svg" width="368" height="1041" viewbox="0 0 368 1041" fill="none">
+      <path d="M328.373 -164.69C227.446 -195.575 109.086 -155.861 47.2335 -70.3516C-14.6249 15.1439 -15.4342 140.171 45.3134 226.617C88.5364 288.129 157.342 328.732 197.337 392.38C257.398 487.959 239.975 612.677 277.349 719.195C323.89 851.861 448.321 939.773 570.536 1009.09C611.368 1032.23 662.924 1054.28 702.673 1029.4C743.985 1003.54 744.97 944.221 737.24 896.011C678.034 526.845 398.878 223.64 327.666 -143.41" fill="#FFC149"></path>
+    </svg>
+    <!-- start payment methods modal-->
+    <div class="modal fade main__modal main-form" id="paymentMethods">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <h2 class="section-head fs-24 text-center mb-3">طرق الدفع</h2>
+            <form class="form-default" role="form" action="#">
+              <div class="form-wrapper payment-methods-parent">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="form-group form-control form-check">
+                        <input class="form-check-input" id="payCardInfo" type="radio" name="paymentMethodsType" checked>
+                        <label class="form-check-label" for="payCardInfo"><img class="img-fluid me-2" src="./images/icons/card.webp"> بطاقة ائتمان</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <div class="form-group form-control form-check">
+                        <input class="form-check-input" id="payInDeliver" type="radio" name="paymentMethodsType">
+                        <label class="form-check-label" for="payInDeliver"><img class="img-fluid me-2" src="./images/icons/dollar-square.webp"> الدفع عند الاستلام</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-wrapper payment-methods-data">
+                <h2 class="section-head fs-16 mb-3">بيانات بطاقة الائتمان</h2>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="form-group not">
+                      <input class="form-control" type="text" name="card-number" placeholder="رقم البطاقة">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group not">
+                      <input class="form-control" type="text" name="card-name" placeholder="اسم البطاقة">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <input class="form-control" type="text" name="card-expiry-date" placeholder="تاريخ الانتهاء">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="form-group">
+                      <input class="form-control" type="text" name="card-CVV" placeholder="CVV">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-wrapper">
+                <h2 class="section-head fs-16 mb-3">التوصيل الى </h2>
+                <p class="section-text"><img class="img-fluid me-2" src="./images/icons/location.webp"> اسم الشارع - الرياض - المملكة العربية السعودية</p>
+              </div>
+              <div class="form-wrapper">
+                <h2 class="section-head fs-16 mb-3">ملخص الدفع</h2>
+                <div class="line"> 
+                  <p class="section-text">المجموع الفرعى</p>
+                  <p class="section-text">40.00 ريال</p>
+                </div>
+                <div class="line"> 
+                  <p class="section-text">الضريبة</p>
+                  <p class="section-text">00.00 ريال</p>
+                </div>
+                <div class="line"> 
+                  <p class="section-text">الشحن</p>
+                  <p class="section-text">10.00 ريال</p>
+                </div>
+              </div>
+              <div class="form-wrapper">
+                <div class="line"> 
+                  <p class="section-text">كوبون خصم</p>
+                  <p class="section-text sale">10.00 ريال</p>
+                </div>
+                <div class="line"> 
+                  <p class="section-text total">الاجمالى</p>
+                  <p class="section-text total">40.00 ريال</p>
+                </div>
+              </div>
+            </form>
+            <div class="section-btn">
+              <button class="btn main-button--form mt-3" type="button" data-bs-toggle="modal" data-bs-target="#thankYouAndInformationRequest">تاكيد الدفع</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end payment methods modal-->
+    <!-- start thank you && information Request modal-->
+    <div class="modal fade main__modal main-form" id="thankYouAndInformationRequest" data-bs-backdrop="static" data-bs-keyboard="false">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="section-head fs-24 text-center mb-3">تم استلام طلبك</h2>
+            <div class="horizontal-wrapper">
+              <div class="thank-you-img"><img class="img-fluid mb-4" src="./images/thankYou.webp">
+                <h6 class="section-head fs-16">شكرا لك .. لقد تم استلام طلبك بنجاح</h6>
+              </div>
+              <div class="d-flex flex-column gap-2">
+                <p class="section-text"><img class="img-fluid" src="./images/thankYou.webp" width="25"> رقم الطلب : 1002134554 </p>
+                <p class="section-text"><img class="img-fluid" src="./images/thankYou.webp" width="25"> التاريخ : 5/2/2024</p>
+                <p class="section-text"><img class="img-fluid" src="./images/thankYou.webp" width="25"> رقم الجوال : 2145789542</p>
+                <p class="section-text"><img class="img-fluid" src="./images/thankYou.webp" width="25"> الاجمالى : 40.00 ريال</p>
+                <p class="section-text"><img class="img-fluid" src="./images/thankYou.webp" width="25"> وسيلة الدفع : الدفع عند الاستلام</p>
+              </div>
+              <div class="section-btn"><a class="btn main-button--form mt-3" href="index.html">الرجوع الى الصفحة الرئيسية</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end thank you && information Request modal-->
+    <!-- Start NavBar-->
+    <header id="header">
+      <!-- navbar start-->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="nav-mob"><a class="navbar-brand" href="index.html"><img class="logo img-fluid" src="./images/logo/logo.webp" alt="logo" title="logo"></a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"><i class="fa-solid fa-bars"></i></button>
+          </div>
+          <div class="offcanvas-lg offcanvas-start side-nav-bar" id="navbarSupportedContent">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1315" height="140" viewbox="0 0 1315 140" fill="none">
+              <g filter="url(#filter0_d_1_48)">
+                <path d="M1292.62 7.69934C1308.22 15.0242 1325.54 115.79 1295.7 125.825C1261.19 137.423 66.3032 141.696 24.517 124.58C-17.3145 107.489 3.84998 7.08893 18.9093 4.32989C33.9686 1.57085 1264.67 -5.38779 1292.62 7.69934Z" fill="#0A2461"></path>
+              </g>
+              <defs>
+                <filter id="filter0_d_1_48" x="0" y="0" width="1314.47" height="139.29" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+                  <fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></fecolormatrix>
+                  <feoffset dx="2.47" dy="3.29"></feoffset>
+                  <fecolormatrix type="matrix" values="0 0 0 0 0.0823529 0 0 0 0 0.160784 0 0 0 0 0.329412 0 0 0 1 0"></fecolormatrix>
+                  <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_48"></feblend>
+                  <feblend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_48" result="shape"></feblend>
+                </filter>
+              </defs>
+            </svg>
+            <div class="offcanvas-header"><a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/logo/logo.webp" alt="logo" title="logo"></a>
+              <button class="btn-close" type="button" data-bs-dismiss="offcanvas" data-bs-target="#navbarSupportedContent" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body"><a class="navbar-brand" href="index.html"><img class="logo img-fluid" src="./images/logo/logo.webp" alt="logo" title="logo"></a>
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.html">من نحن</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="services" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">لوحات تجريدية</a>
+                  <ul class="dropdown-menu dropdown-menu--navbar">
+                    <li><a class="dropdown-item" href="abstract-paintings.html">
+                        <p class="dropdown-item__title">درجات الازرق</p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings.html">
+                        <p class="dropdown-item__title">جمال ورق الدهب </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings.html">
+                        <p class="dropdown-item__title">درجات البنى و البيج </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings.html">
+                        <p class="dropdown-item__title">درجات الابيض  </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings.html">
+                        <p class="dropdown-item__title">درجات الاحمر و العنابى </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings.html">
+                        <p class="dropdown-item__title">درجات السماوى </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings.html">
+                        <p class="dropdown-item__title">جمال الالوان و تناسقها </p></a></li>
+                    <li><a class="dropdown-item" href="abstract-paintings.html">
+                        <p class="dropdown-item__title">درجات الابيض و الاسود و الرمادى </p></a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="rose-paintings.html">ورود </a></li>
+                <li class="nav-item"><a class="nav-link" href="women-paintings.html">نساء </a></li>
+                <li class="nav-item"><a class="nav-link" href="islamic-paintings.html">اسلاميات</a></li>
+                <li class="nav-item"><a class="nav-link" href="sale.html">تخفيضات </a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us.html">اتصل بنا</a></li>
+              </ul>
+              <div class="top-navbar">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="logIn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><img class="img-fluid" src="./images/icons/user.webp" alt=""></a>
+                    <ul class="dropdown-menu dropdown-menu--navbar" aria-labelledby="logIn">
+                      <li><a class="dropdown-item" href="profile.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/user-square.svg"> الحساب الشخصي </p></a></li>
+                      <li><a class="dropdown-item" href="profile.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/wishlist.svg"> المفضله  </p></a></li>
+                      <li><a class="dropdown-item" href="profile.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/route-square.svg"> العنوان   </p></a></li>
+                      <li><a class="dropdown-item" href="#">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/send-sqaure-2.svg"> تسجيل الخروج   </p></a></li>
+                      <li><a class="dropdown-item" href="register.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/user-square.svg"> انشاء حساب</p></a></li>
+                      <li><a class="dropdown-item" href="logIn.html">
+                          <p class="dropdown-item__title"><img class="img-fluid" src="./images/icons/receive-square-2.svg"> تسجيل الدخول   </p></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item shopping-cart-badge"><span class="badge">3</span><a class="nav-link" href="shopping-cart.html"><img class="img-fluid" src="./images/icons/shopping-cart.webp" alt=""></a></li>
+                  <li class="nav-item"><a class="nav-link" href="contact-us.html"><img class="img-fluid" src="./images/icons/search-normal.webp" alt=""></a></li>
+                </ul>
+                <!-- switch language start--><a class="language-toggle" href="shopping-cart-en.html">English </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End NavBar-->
+    <!-- start cart section -->
+    <section class="main-section">
+      <div class="container">
+        <div class="main-section__wrapper">
+          <div class="horizontal-wrapper">
+            <h4 class="section-head fs-32 circle-md">عربة التسوق</h4>
+            <div class="shopping-cart">
+              <div class="table-responsive table-responsive-lg">
+                <table class="table mb-0">
+                  <thead>
+                    <tr>
+                      <td> 
+                        <h6 class="section-head fs-24">المنتج</h6>
+                      </td>
+                      <td class="price">
+                        <h6 class="section-head fs-24">السعر</h6>
+                      </td>
+                      <td> 
+                        <h6 class="section-head fs-24">الكمية</h6>
+                      </td>
+                      <td> 
+                        <h6 class="section-head fs-24">الاجمالى</h6>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="product-1">
+                      <td class="img-product">
+                        <div><img class="img-fluid" src="./images/women/1.webp" alt="img">
+                          <div>
+                            <h3 class="section-head fs-18">لوحة فنية تجريدية </h3>
+                            <p class="section-text">رقم الموديل 1254</p>
+                            <p class="section-text d-none">40.00 ريال</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="price">
+                        <p class="section-text">40.00 ريال</p>
+                      </td>
+                      <td>
+                        <div class="cartTable__counter" id="item-1">
+                          <button class="btn decrement" data-id="1"><img src="/images/icons/decrement.svg"></button><span class="value">1</span>
+                          <button class="btn increment" data-id="1"><img src="/images/icons/increment.svg"></button>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="section-text">40.00 ريال</p>
+                      </td>
+                    </tr>
+                    <tr id="product-2">
+                      <td class="img-product">
+                        <div><img class="img-fluid" src="./images/women/2.webp" alt="img">
+                          <div>
+                            <h3 class="section-head fs-18">لوحة فنية تجريدية </h3>
+                            <p class="section-text">رقم الموديل 1254</p>
+                            <p class="section-text d-none">40.00 ريال</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="price">
+                        <p class="section-text">40.00 ريال</p>
+                      </td>
+                      <td>
+                        <div class="cartTable__counter" id="item-2">
+                          <button class="btn decrement" data-id="2"><img src="/images/icons/decrement.svg"></button><span class="value">1</span>
+                          <button class="btn increment" data-id="2"><img src="/images/icons/increment.svg"></button>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="section-text">40.00 ريال</p>
+                      </td>
+                    </tr>
+                    <tr id="product-3">
+                      <td class="img-product">
+                        <div><img class="img-fluid" src="./images/women/3.webp" alt="img">
+                          <div>
+                            <h3 class="section-head fs-18">لوحة فنية تجريدية </h3>
+                            <p class="section-text">رقم الموديل 1254</p>
+                            <p class="section-text d-none">40.00 ريال</p>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="price">
+                        <p class="section-text">40.00 ريال</p>
+                      </td>
+                      <td>
+                        <div class="cartTable__counter" id="item-3">
+                          <button class="btn decrement" data-id="3"><img src="/images/icons/decrement.svg"></button><span class="value">1</span>
+                          <button class="btn increment" data-id="3"><img src="/images/icons/increment.svg"></button>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="section-text">40.00 ريال</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div>
+              <div class="shopping-cart__info">
+                <div class="horizontal-wrapper">
+                  <div class="line"> 
+                    <p class="section-text">المجموع الفرعى</p>
+                    <p class="section-text">40.00 ريال</p>
+                  </div>
+                  <div class="line"> 
+                    <p class="section-text">الضريبة</p>
+                    <p class="section-text">00.00 ريال</p>
+                  </div>
+                  <div class="line"> 
+                    <p class="section-text">الشحن</p>
+                    <p class="section-text">10.00 ريال</p>
+                  </div>
+                </div>
+              </div>
+              <div class="shopping-cart__info">
+                <div class="horizontal-wrapper">
+                  <div class="line"> 
+                    <p class="section-text">ادخل كوبون الخصم</p>
+                    <div class="form-group form-control">
+                      <input type="text" value="6552">
+                      <label class="section-text"> ادخال</label>
+                    </div>
+                  </div>
+                  <div class="line"> 
+                    <p class="section-head fs-18 total">الاجمالى</p>
+                    <p class="section-head total">40.00 ريال</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="section-btn"><a class="btn main-button--form main-button--form--outLine" href="index.html">مواصلة التسوق</a>
+                  <button class="btn main-button--form" type="button" data-bs-toggle="modal" data-bs-target="#paymentMethods">طرق الدفع</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end cart section -->
+    <!-- Start footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__col footer__info">
+            <div class="footer__logo"><img src="./images/logo/logo.webp"></div>
+            <p class="footer__desc">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف </p>
+          </div>
+          <div class="footer__col footer__links">
+            <h3 class="footer__head">منتجاتنا</h3>
+            <ul> 
+              <li> <a href="index.html">
+                  <p>لوحات تجريدية</p></a></li>
+              <li> <a href="index.html">
+                  <p>لوحات ورود</p></a></li>
+              <li> <a href="index.html">
+                  <p>لوحات نساء</p></a></li>
+              <li> <a href="index.html">
+                  <p>لوحات اسلامية</p></a></li>
+            </ul>
+          </div>
+          <div class="footer__col footer__contact-info">
+            <h3 class="footer__head">اتصل بنا</h3>
+            <ul> 
+              <li> <a href="tel:05123456789">
+                  <p><img src="./images/icons/li_phone.svg"> <span>05123456789</span> </p></a></li>
+              <li> <a href="mailto:info@talaween-art.com">
+                  <p><img src="./images/icons/li_mail.svg"> <span>info@talaween-art.com</span> </p></a></li>
+              <li> <a href="#">
+                  <p><img src="./images/icons/location.svg"> <span>المملكة العربية السعودية - المملكة العربي السعودية</span> </p></a></li>
+            </ul>
+            <ul class="footer__social"> 
+              <li><a href="#"> <img src="./images/icons/facebook.svg"></a></li>
+              <li><a href="#"><img src="./images/icons/insta.svg"> </a> </li>
+              <li><a href="#"><img src="./images/icons/whatsApp.svg"> </a> </li>
+              <li><a href="#"><img src="./images/icons/twitter.svg"> </a> </li>
+              <li><a href="#"><img src="./images/icons/snapchat.svg"> </a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>جميع الحقوق محفوظة @ لشركة تلاوين ارت 
+            <script>document.write(new Date().getFullYear())</script>  
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- End footer-->
+    <!-- Start Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
